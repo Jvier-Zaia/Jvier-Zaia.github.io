@@ -25,30 +25,20 @@
 </nav></header>
 <body>
 <section class="turnos">
-    <h2>dejanos tu email y te confimamos el turno</h2>
-<div class="email">
-<input class="email" type="email" placeholder="correo electronico"  >
-</div>
-<div class="calendario">  
-<input type="date">
-</div>
-<div>
-<button>Pedir Turno</button>
-
-</div>
-
-
-
-
-
-
-
+  <h2>dejanos tu email y te confimamos el turno</h2>
+  <form id="form">
+    <div class="email">
+      <input id="email" class="email" type="email" placeholder="correo electronico">
+    </div>
+    <div class="calendario">
+      <input id="calendary" type="date">
+    </div>
+    <div>
+      <button type="submit">Pedir Turno</button>
+    </div>
+    <p id="resultSubmit" class="form-text"></p>
+  </form>
 </section>
-
-
-
-
-
-
+<script src="js-funtions/main.js"></script>
 </body>
 </html>

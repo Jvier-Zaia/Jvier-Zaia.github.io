@@ -28,17 +28,46 @@
   <h2>dejanos tu email y te confimamos el turno</h2>
   <form id="form">
     <div class="email">
-      <input id="email" class="email" type="email" placeholder="correo electronico">
+      <input id="Email" class="email" type="email" placeholder="correo electronico"required>
     </div>
+   
     <div class="calendario">
-      <input id="calendary" type="date">
+      <input id="calendary" type="date"required>
     </div>
     <div>
+       <div class="horarios">
+  <label class="label" for="horario-turno">Selecciona un Horario</label>
+  <select class="select" id="horario-turno" required>
+    <option value="">Mañana</option>
+    <option value="08:30">08:30</option>
+    <option value="09:00">09:00</option>
+    <option value="09:30">09:30</option>
+    <option value="10:00">10:00</option>
+    <option value="10:30">10:30</option>
+    <option value="11:00">11:00</option>
+    <option value="11:30">11:30</option>
+    <option value="12:00">12:00</option>
+      <option value="">Tarde</option>
+    <option value="13:30">13:30</option>
+    <option value="14:00">14:00</option>
+    <option value="14:30">14:30</option>
+    <option value="15:00">15:00</option>
+    <option value="15:30">15:30</option>
+    <option value="16:00">16:00</option>
+    <option value="16:30">16:30</option>
+    <option value="17:00">17:00</option>
+    <option value="17:00">17:30</option>
+    <option value="18:00">18:00</option>
+    <!-- Agrega más horarios según lo que necesites -->
+  </select>
       <button type="submit">Pedir Turno</button>
     </div>
+    
     <p id="resultSubmit" class="form-text"></p>
   </form>
+  
 </section>
-<script src="js-funtions/main.js"></script>
+<script src="js-funtions/email.js"></script>
+<script src="js-funtions/calendary.js"></script>
 </body>
 </html>

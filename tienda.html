@@ -27,16 +27,16 @@
    <h1>Productos Destacados</h1>
   
   <div class="container-fluid seach-cont">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    <form id="form" class="d-flex" role="search">
+      <input id="input" class="form-control me-2" type="search" placeholder="" aria-label="Search"/>
+      <button id="btn" class="btn btn-outline-success" type="submit">Buscar</button>
     </form>
   </div>
 
   <div class="products">
    
   <!--producto 1-->
-  <div class="product">
+  <div data-id="producto 1" class="product">
     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/019/016/products/otovier_nf_2021_web1-243cff1a7e967b3cab16173712966179-640-0.jpg" alt="imagen producto otovier">
     <h3>Otovier</h3>
     <h4>(Gotas para oidos)</h4>
@@ -45,7 +45,7 @@
     <button> Comprar </button>
   </div>
   <!--producto 2-->
-  <div class="product">
+  <div class="product" data-id="producto 2" >
     <img src="https://vetpost.co.nz/wp-content/uploads/Untitled-design-85-1024x1024.png" alt="imagen producto ">
     <h3>Bravecto (Gato)</h3>
     <h4>(Desparacitante Externo)</h4>
@@ -54,7 +54,7 @@
     <button> Comprar </button>
   </div>
    <!--producto 3-->
-<div class="product">
+<div class="product" data-id="producto 3">
     <img src="https://vetpost.co.nz/wp-content/uploads/Untitled-design-79.png" alt="imagen producto ">
     <h3>Bravecto (Perro)</h3>
     <h4>(Desparacitante Externo)</h4>
@@ -63,7 +63,7 @@
     <button> Comprar </button>
   </div>
    <!--producto 4-->
-<div class="product">
+<div class="product" data-id="producto 4">
     <img src="https://www.tusmascotas.cl/wp-content/uploads/2023/03/simparica-5-a-10-3-comprimidos-1.jpg" alt="imagen producto">
     <h3>Simparica (Perro)</h3>
     <h4>(Comprimidos masticables)</h4>
@@ -72,7 +72,7 @@
     <button> Comprar </button>
   </div>
   <!--producto 5-->
-<div class="product">
+<div class="product" data-id="producto 5">
     <img src="https://petbaar.vtexassets.com/arquivos/ids/157124/purina-pro-plan-gato-reduced-calories-03-01.jpg?v=638123015090970000" alt="imagen producto">
     <h3>Alimento Purina 15kg</h3>
     <h4>(Gato Castrado)</h4>
@@ -81,7 +81,7 @@
     <button> Comprar </button>
   </div>
 <!--producto 6-->
-  <div class="product">
+  <div class="product" data-id="producto 6">
     <img src="https://a2.soysuper.com/57b7ecfa7f2fbb69fb719db6b9a00152.1500.0.0.0.wmark.71487bfc.jpg" alt="imagen producto">
     <h3>Alimento Humedo Purina</h3>
     <h4>(Gato chachorro)</h4>
@@ -90,8 +90,8 @@
     <button> Comprar </button>
   </div>
   <!--producto 7-->
-  <div class="product">
-    <img src="https://parze.04ca24f332367732514bb6c43496fe1d.r2.cloudflarestorage.com/1bb5sj1nb0t6bwlpk5q5uvp09jkl?response-content-disposition=inline%3B%20filename%3D%2223100041049.jpg%22%3B%20filename%2A%3DUTF-8%27%2723100041049.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=d3ec6f499745729abc345507981d1fa1%2F20250602%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250602T215500Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d2f5bebab40d3f5fe51bda086746cccb83bf873dead14c4b17452c6fe71fe22a" alt="imagen producto">
+  <div class="product" data-id="producto 7">
+    <img src="https://walmartsv.vtexassets.com/arquivos/ids/273438/Alimento-Seco-Para-Perros-Adultos-Pedigree-Res-y-Vegetales-21Kg-1-15384.jpg?v=638022550369930000" alt="imagen producto">
     <h3>Alimento Pedigree 2kg</h3>
     <h4>(Perro chachorro)</h4>
     <p>$4,299</p>
@@ -99,7 +99,7 @@
     <button> Comprar </button>
   </div>
   <!--producto 8-->
-  <div class="product">
+  <div  class="product" data-id="producto 8">
     <img src="https://dojiw2m9tvv09.cloudfront.net/11787/product/X_purinaproplanperroadultolata368-5gr7857.jpg?181" alt="imagen producto">
     <h3>Lata de alimento humedo Purina</h3>
     <h4>(Perro adulto)</h4>
@@ -107,6 +107,98 @@
     <p>5% de descuento!</p>
     <button> Comprar </button>
   </div>
+   <!-- Producto 9 -->
+        <div class="product" data-id="producto-9">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_799831-MLA45470213944_042021-O.webp" alt="Royal Canin Mini Adult">
+            <h3>Royal Canin Mini Adult</h3>
+            <h4>(Perros pequeños adultos)</h4>
+            <p>$2,450</p>
+            <p>10% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="product" data-id="producto-10">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_642185-MLA45470225161_042021-O.webp" alt="Vitalcan Complete">
+            <h3>Vitalcan Complete</h3>
+            <h4>(Gato adulto 7.5kg)</h4>
+            <p>$3,280</p>
+            <p>15% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 11 -->
+        <div class="product" data-id="producto-11">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_834528-MLA46011059945_052021-O.webp" alt="Pro Plan Cachorro">
+            <h3>Pro Plan Puppy</h3>
+            <h4>(Cachorro raza grande)</h4>
+            <p>$4,120</p>
+            <p>8% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 12 -->
+        <div class="product" data-id="producto-12">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_901516-MLA46554488344_062021-O.webp" alt="Eukanuba Adult">
+            <h3>Eukanuba Adult</h3>
+            <h4>(Perro adulto razas medianas)</h4>
+            <p>$1,890</p>
+            <p>12% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 13 -->
+        <div class="product" data-id="producto-13">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_612345-MLA45834567890_042021-O.webp" alt="Whiskas Adulto">
+            <h3>Whiskas Adulto</h3>
+            <h4>(Gato adulto sabor atún)</h4>
+            <p>$1,650</p>
+            <p>7% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 14 -->
+        <div class="product" data-id="producto-14">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_756423-MLA46789012345_072021-O.webp" alt="Pedigree Adulto">
+            <h3>Pedigree Adulto</h3>
+            <h4>(Perro adulto carne y pollo)</h4>
+            <p>$2,780</p>
+            <p>6% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 15 -->
+        <div class="product" data-id="producto-15">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_892341-MLA47123456789_082021-O.webp" alt="Excellent Gato">
+            <h3>Excellent Gato</h3>
+            <h4>(Gato adulto castrado)</h4>
+            <p>$2,340</p>
+            <p>9% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 16 -->
+        <div class="product" data-id="producto-16">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_645789-MLA47456789012_092021-O.webp" alt="Dog Chow Adulto">
+            <h3>Dog Chow Adulto</h3>
+            <h4>(Perro adulto razas pequeñas)</h4>
+            <p>$1,980</p>
+            <p>11% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Producto 17 -->
+        <div class="product" data-id="producto-17">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_723456-MLA47789012345_102021-O.webp" alt="Sieger Premium">
+            <h3>Sieger Premium</h3>
+            <h4>(Perro adulto alta energía)</h4>
+            <p>$3,560</p>
+            <p>13% de descuento!</p>
+            <button>Comprar</button>
+        </div>
+
+
 </div>
+<script src="tienda.js"></script>
 </body>
 </html>
